@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="TicTacToe.css" type="text/css" />
+
+    <link
+      rel="shortcut icon"
+      href="icons8-tic-tac-toe-67.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body bgcolor="black">
+    <div id="container">
+      <div id="head">
+        <h1><img src="OIP.jpg" alt="image" /> Tic Tac Toe</h1>
+      </div>
+      <div id="btn">
+        <table border="1">
+          <tr>
+            <td><input type="button" class="button" onclick="getNum(0)" /></td>
+            <td><input type="button" class="button" onclick="getNum(1)" /></td>
+            <td><input type="button" class="button" onclick="getNum(2)" /></td>
+          </tr>
+          <tr>
+            <td><input type="button" class="button" onclick="getNum(3)" /></td>
+            <td><input type="button" class="button" onclick="getNum(4)" /></td>
+            <td><input type="button" class="button" onclick="getNum(5)" /></td>
+          </tr>
+          <tr>
+            <td><input type="button" class="button" onclick="getNum(6)" /></td>
+            <td><input type="button" class="button" onclick="getNum(7)" /></td>
+            <td><input type="button" class="button" onclick="getNum(8)" /></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="turn">
+        <h2>X Turn</h2>
+      </div>
+
+      <div id="restart">
+        <button type="button" onclick=" restart()">Restart</button>
+        <button><a href="Page.html">Back</a></button>
+      </div>
+    </div>
+
+    <script src="TicTacToe.js"></script>
+  </body>
+</html>
