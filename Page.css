@@ -1,0 +1,67 @@
+* {
+  overflow: hidden;
+  font-family: Agbalumo;
+}
+#container {
+  background-image: url("Background.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#head > h1 > img {
+  width: 51px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: inset 1px 1px 1px black;
+}
+#head > h1 {
+  color: transparent;
+  font-size: 70px;
+  background: url("back.jfif");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: body 30s linear infinite;
+}
+@keyframes body {
+  100% {
+    background-position: 1000% 0;
+  }
+}
+a > button {
+  width: 200px;
+  height: 35px;
+  font-size: 20px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  box-shadow: inset -1px -1px 8px white;
+  text-align: center;
+}
+#button {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+#button > button {
+  width: 110px;
+  height: 40px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  box-shadow: inset -1px -1px 5px white;
+  border-radius: 5px;
+}
+
+#button > button:hover {
+  transform: rotate(1deg);
+  font-size: 21px;
+}

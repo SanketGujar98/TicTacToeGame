@@ -1,0 +1,71 @@
+* {
+  overflow: hidden;
+  font-family: Agbalumo;
+  color: white;
+  cursor: pointer;
+}
+#container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("Background.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#head > h1 > img {
+  width: 40px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 1px black;
+}
+.button {
+  width: 65px;
+  height: 65px;
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: inset -1px -1px 5px white;
+}
+#head > h1 {
+  font-size: 50px;
+  color: transparent;
+  background: url("back.jfif");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 1000% 0;
+  }
+}
+button > a {
+  text-decoration: none;
+}
+
+#turn {
+  font-size: 15px;
+}
+#restart > button {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: inset -1px -1px 5px white;
+}
+
+#restart > button:hover {
+  font-size: 15px;
+}
+  
+.button:hover {
+  background-color: rgb(66, 63, 63);
+}
